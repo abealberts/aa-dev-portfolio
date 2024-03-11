@@ -1,21 +1,27 @@
+import * as React from 'react';
+import { Outlet } from 'react-router-dom';
+
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import { Container } from '@mui/material';
+import { CssBaseline, Container } from '@mui/material';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 
 function App() {
 
   return (
-    <>
+    <Container>
         <CssBaseline />
-          {/* <Navbar /> */}
-          <Container maxWidth='xl' sx={{pt: "24px"}}>
+          <Container>
+            <Navbar />
             <Outlet />
+            <Footer />
           </Container>
-    </>
+    </Container>
   )
 }
 
-export default App
+export default App;
