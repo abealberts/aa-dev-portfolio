@@ -1,11 +1,11 @@
-import { Typography } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 
 function Footer() {
 
     return (
-      <>
-      <Typography>Footer</Typography>
-      </>
+      <Container>
+        <Typography>Footer</Typography>
+      </Container>
     )
   }
 

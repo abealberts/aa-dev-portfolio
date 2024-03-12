@@ -4,7 +4,7 @@ function Projects() {
 
     return (
       <>
-      <Typography>Projects</Typography>
+        <Typography>Projects</Typography>
       </>
     )
   }

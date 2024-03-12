@@ -15,11 +15,11 @@ function App() {
   return (
     <Container>
         <CssBaseline />
-          <Container>
-            <Navbar />
+        <Navbar />
+          <Container maxWidth='xl' sx={{mt: 10}}>
             <Outlet />
-            <Footer />
           </Container>
+        <Footer />
     </Container>
   )
 }

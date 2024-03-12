@@ -4,7 +4,7 @@ function Contact() {
 
     return (
       <>
-      <Typography>Contact</Typography>
+        <Typography>Contact</Typography>
       </>
     )
   }

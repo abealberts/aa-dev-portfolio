@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
@@ -63,7 +62,6 @@ function Navbar(props) {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <CssBaseline />
       <AppBar component="nav">
         <Toolbar>
           <IconButton
@@ -84,7 +82,7 @@ function Navbar(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item, index) => (
-              <Button key={index} sx={{ color: '#fff' }}>
+              <Button key={index} sx={{ color: '#fff' }} component={RouterLink} to={item.route}>
                 {item.label}
               </Button>
             ))}
