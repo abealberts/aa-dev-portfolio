@@ -13,14 +13,14 @@ import Footer from './components/Footer';
 function App() {
 
   return (
-    <Container>
+    <>
         <CssBaseline />
         <Navbar />
           <Container maxWidth='xl' sx={{mt: 10}}>
             <Outlet />
           </Container>
         <Footer />
-    </Container>
+    </>
   )
 }
 

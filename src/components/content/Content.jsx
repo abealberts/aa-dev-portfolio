@@ -1,15 +1,15 @@
-import { Divider, Typography } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 
 function Content({ props }) {
 
     const bodyContent = props.map((item, index) => (
-        <>
-            <Typography variant='h6' key={`header${index}`}>{item.header}</Typography>
-            <Typography key={`body${index}`}>{item.body}</Typography>
+        <Box key={index}>
+            <Typography variant='h6'>{item.header}</Typography>
+            <Typography>{item.body}</Typography>
             <br/>
-            <Divider></Divider>
+            <Divider/>
             <br/>
-        </>
+        </Box>
     ));
 
     console.log(props);
