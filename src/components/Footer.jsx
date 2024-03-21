@@ -2,7 +2,6 @@ import {
   List,
   ListItem,
   ListItemButton,
-  ListItemIcon,
   ListItemText,
   Box,
   Container,
@@ -14,7 +13,16 @@ import { Link as RouterLink } from 'react-router-dom';
 function Footer() {
 
     return (
-      <Container maxWidth='md' sx={{display: 'flex', justifyContent: 'space-around', alignItems: 'center', backgroundColor: '#E9F4FF', borderTop: 'solid 2px #CFE1F3'}}>
+      
+      <Container sx={{
+        display: 'flex',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        marginTop: 'auto',
+        minWidth: '100vw',
+        backgroundColor: '#E9F4FF',
+        borderTop: 'solid 2px #CFE1F3',
+      }}>
 
         <Box>
           <List>
